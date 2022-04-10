@@ -57,6 +57,7 @@ struct BookRowView: View {
             .font(.subheadline)
             .italic()
             .foregroundColor(.secondary)
+            .shadow(color: .red, radius: 2, x: 5, y: 5)
         }
       }
       Spacer()
