@@ -1,0 +1,41 @@
+definitions:
+  environment_versions: &sample_environment_versions
+    xcode: 13.3
+    vars:
+      XCODE_PROJECT: "RaysLibrary.xcodeproj"
+      XCODE_iOS_SCHEME: "RaysLibrary"
+  scripts:
+    - &run_ios_tests
+      name: Run iOS UI and Unit tests
+      script: |
+        xcode-project run-tests \
+          --project "$XCODE_PROJECT" \
+          --scheme "$XCODE_iOS_SCHEME" \
+          --device "iPhone 12"
+      test_report: build/ios/test/*.xml
+
+workflows:
+  ios-intel-testing-workflow:
+    name: iOS Intel Testing Workflow
+    instance_type: mac_mini
+    environment:
+      <<: *sample_environment_versions
+    triggering:
+      events:
+        - push
+    scripts:
+      - *run_ios_tests
+    artifacts:
+      - $HOME/Library/Developer/Xcode/DerivedData/**/Logs/Test/**/*.xcresult
+  ios-m1-testing-workflow:
+    name: iOS M1 Testing Workflow
+    instance_type: mac_mini_m1
+    environment:
+      <<: *sample_environment_versions
+    triggering:
+      events:
+        - push
+    scripts:
+      - *run_ios_tests
+    artifacts:
+      - $HOME/Library/Developer/Xcode/DerivedData/**/Logs/Test/**/*.xcresult

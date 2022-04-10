@@ -1,0 +1,122 @@
+[{
+  "id": "6099e5b86c80d9431882fdfe",
+  "title": "iOS App Distribution & Best Practices",
+  "author": "Ray Wenderlich",
+  "publisher": "Razeware LLC",
+  "image": "Book_1",
+  "release": "Apr 21 2021",
+  "rating": 4,
+  "description": "iOS & Swift · Swift 5.3, iOS 14.4, Xcode 12.4",
+  "summary": "Learn how to sign up for Apple Developer Program, generate the various certificates needed, configure your app and submit an app to the App Store for approval, both manually and through automated..."
+},
+{
+  "id": "6099e5b8555e3fba87000b8b",
+  "title": "Server-Side Swift with Vapor",
+  "author": "Ray Wenderlich",
+  "publisher": "Razeware LLC",
+  "image": "Book_2",
+  "release": "Mar 30 2021",
+  "rating": 3,
+  "description": "iOS & Swift · Swift 5.2 - Vapor 4 Framework, iOS 13, Xcode 11.4",
+  "summary": "Learn how to build web apps and web APIs using Swift and the Vapor 4 framework! If you’re a beginner to web development, but have worked with Swift for some time, you’ll find it’s easy to create..."
+},
+{
+  "id": "6099e5b89014a07c957681b1",
+  "title": "SwiftUI by Tutorials",
+  "author": "Ray Wenderlich",
+  "publisher": "Razeware LLC",
+  "image": "Book_3",
+  "release": "Mar 17 2021",
+  "rating": 3,
+  "description": "iOS & Swift · Swift 5.3, iOS 14, Xcode 12",
+  "summary": "Build fluid and engaging declarative UI for your apps — using less code — with SwiftUI! SwiftUI by Tutorials is designed to help you learn how to transition from the “old way” of building your app..."
+},
+{
+  "id": "6099e5b83e999848b0aedbc9",
+  "title": "App Design Apprentice",
+  "author": "Ray Wenderlich",
+  "publisher": "Razeware LLC",
+  "image": "Book_4",
+  "release": "Feb 12 2021",
+  "rating": 5,
+  "description": "iOS & Swift · Figma",
+  "summary": "Learn Modern App Design with Figma! This book guides you through designing modern mobile apps using fundamental design principles. This book is for intermediate iOS and Android developers who..."
+},
+{
+  "id": "6099e5b8232c2347aa7ad02b",
+  "title": "Living by the Code",
+  "author": "Ray Wenderlich",
+  "publisher": "Razeware LLC",
+  "image": "Book_5",
+  "release": "Feb 5 2021",
+  "rating": 4,
+  "description": "iOS & Swift",
+  "summary": "Living by the Code brings the experiences and insights of over 40 of today’s top developers, leaders and innovators in tech together in one single book, to help you grow your career in today’s..."
+},
+{
+  "id": "6099e5b81de2ecf18d0b54d",
+  "title": "Push Notifications by Tutorials",
+  "author": "Ray Wenderlich",
+  "publisher": "Razeware LLC",
+  "image": "Book_6",
+  "release": "Jan 15 2021",
+  "rating": 4,
+  "description": "iOS & Swift · Swift 5.3, iOS 14, Xcode 12",
+  "summary": "Get Started with Push Notifications on iOS! Push notifications may seem simple and straightforward at first since almost everyone is familiar with them; however, knowing how and when to use them in..."
+},
+{
+  "id": "6099e5b81dbe2ecf18d0b54d",
+  "title": "Core Data by Tutorials",
+  "author": "Ray Wenderlich",
+  "publisher": "Razeware LLC",
+  "image": "Book_7",
+  "release": "Nov 20 2020",
+  "rating": 5,
+  "description": "iOS & Swift · Swift 5.3, iOS 14, Xcode 12",
+  "summary": "Learn Core Data with Swift! This book is for intermediate iOS developers who already know the basics of iOS and Swift development but want to learn how to use Core Data to save data in their apps...."
+},
+{
+  "id": "6099e5b81dbe2ecf18d0b55d",
+  "title": "Apple Augmented Reality by Tutorials",
+  "author": "Ray Wenderlich",
+  "publisher": "Razeware LLC",
+  "image": "Book_8",
+  "release": "Nov 20 2020",
+  "rating": 3,
+  "description": "iOS & Swift · Swift 5.1, iOS 14, Xcode 12",
+  "summary": "Learn Augmented Reality for the Apple Platform! This book is the easiest and fastest way to get hands-on experience using Apple frameworks and technologies like Reality Composer, RealityKit, and..."
+},
+{
+  "id": "6099e5b81dbe2ecf18d0b56d",
+  "title": "Git Apprentice",
+  "author": "Ray Wenderlich",
+  "publisher": "Razeware LLC",
+  "image": "Book_9",
+  "release": "Oct 29 2020",
+  "rating": 4,
+  "description": "iOS & Swift · Git 2.28, Console",
+  "summary": "Learn Git! Chances are if you’re involved with software development you’ve heard of and have used Git at some point in your life. Version control systems are critical for any successful..."
+},
+{
+  "id": "6099e5b81dbe2ecf18d0b57d",
+  "title": "Combine: Asynchronous Programming with Swift",
+  "author": "Ray Wenderlich",
+  "publisher": "Razeware LLC",
+  "image": "Book_10",
+  "release": "Oct 15 2020",
+  "rating": 3,
+  "description": "iOS & Swift · Swift 5.3, iOS 14, Xcode 12",
+  "summary": "Master declarative asynchronous programming with Swift using the Combine framework! Writing asynchronous code can be challenging, with a variety of possible interfaces to represent, perform, and..."
+},
+{
+  "id": "6099e5b81dbe2ecf18d0b58d",
+  "title": "Swift Apprentice",
+  "author": "Ray Wenderlich",
+  "publisher": "Razeware LLC",
+  "image": "Book_11",
+  "release": "Oct 1 2020",
+  "rating": 4,
+  "description": "iOS & Swift · Swift 5.3, iOS 14, Xcode 12",
+  "summary": "This book is for complete beginners to Swift and coding. No prior programming experience necessary! This is a book for complete beginners to Apple’s modern programming language — Swift. All the..."
+}
+]
