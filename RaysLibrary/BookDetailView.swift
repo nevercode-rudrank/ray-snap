@@ -35,7 +35,7 @@ import SwiftUI
 struct BookDetailView: View {
   var book: BookModel
   @State private var showAlert = false
-
+  
   var body: some View {
     ScrollView(.vertical) {
       VStack {
@@ -54,6 +54,10 @@ struct BookDetailView: View {
           Button("Buy Now") {
             showAlert = true
           }
+          .background(Color.red
+          )
+          .cornerRadius(24)
+          .shadow(color: .green, radius: 10, x: 4, y: 3)
           .alert(isPresented: $showAlert) {
             Alert(
               title: Text("Order Confirmed!"),

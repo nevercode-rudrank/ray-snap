@@ -35,7 +35,7 @@ import SwiftUI
 import SnapshotTesting
 @testable import RaysLibrary
 
-let subpixelThreshold: UInt8 = 3
+let subpixelThreshold: UInt8 = 0
 
 class BookDetailViewTests: XCTestCase {
   let sampleBook = DataProvider.bookList[0]
