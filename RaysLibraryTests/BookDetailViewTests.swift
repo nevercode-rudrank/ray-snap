@@ -35,6 +35,8 @@ import SwiftUI
 import SnapshotTesting
 @testable import RaysLibrary
 
+let subpixelThreshold: UInt8 = 3
+
 class BookDetailViewTests: XCTestCase {
   let sampleBook = DataProvider.bookList[0]
 
@@ -53,19 +55,19 @@ class BookDetailViewTests: XCTestCase {
   }
 
   func testBookDetailViewOniPhone() throws {
-    assertSnapshot(matching: viewController, as: .image(on: .iPhoneX))
+    assertSnapshot(matching: viewController, as: .image(on: .iPhoneX, subpixelThreshold: subpixelThreshold))
   }
 
   func testBookDetailViewOniPhoneLandscape() throws {
     assertSnapshot(
       matching: viewController,
-      as: .image(on: .iPhoneX(.landscape)))
+      as: .image(on: .iPhoneX(.landscape), subpixelThreshold: subpixelThreshold))
   }
 
   func testBookDetailViewOniPadPortrait() throws {
     assertSnapshot(
       matching: viewController,
-      as: .image(on: .iPadPro11(.portrait)))
+      as: .image(on: .iPadPro11(.portrait), subpixelThreshold: subpixelThreshold))
   }
 
   func testBookDetailViewOniPhoneDarkMode() throws {
@@ -73,6 +75,6 @@ class BookDetailViewTests: XCTestCase {
       userInterfaceStyle: UIUserInterfaceStyle.dark)
     assertSnapshot(
       matching: viewController,
-      as: .image(on: .iPhoneX, traits: traitDarkMode))
+      as: .image(on: .iPhoneX, subpixelThreshold: subpixelThreshold, traits: traitDarkMode))
   }
 }

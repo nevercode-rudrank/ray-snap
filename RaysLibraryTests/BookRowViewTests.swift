@@ -41,6 +41,6 @@ class BookRowViewTests: XCTestCase {
   func testBookRowView() throws {
     let bookRowView = BookRowView(book: sampleBook)
     let view: UIView = UIHostingController(rootView: bookRowView).view
-    assertSnapshot(matching: view, as: .image(size: view.intrinsicContentSize))
+    assertSnapshot(matching: view, as: .image(subpixelThreshold: subpixelThreshold, size: view.intrinsicContentSize))
   }
 }
