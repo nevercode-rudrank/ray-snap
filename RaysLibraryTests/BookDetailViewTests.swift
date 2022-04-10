@@ -55,19 +55,19 @@ class BookDetailViewTests: XCTestCase {
   }
 
   func testBookDetailViewOniPhone() throws {
-    assertSnapshot(matching: viewController, as: .image(on: .iPhoneX, subpixelThreshold: subpixelThreshold))
+    assertSnapshot(matching: viewController, as: .image(on: .iPhoneX))
   }
 
   func testBookDetailViewOniPhoneLandscape() throws {
     assertSnapshot(
       matching: viewController,
-      as: .image(on: .iPhoneX(.landscape), subpixelThreshold: subpixelThreshold))
+      as: .image(on: .iPhoneX(.landscape)))
   }
 
   func testBookDetailViewOniPadPortrait() throws {
     assertSnapshot(
       matching: viewController,
-      as: .image(on: .iPadPro11(.portrait), subpixelThreshold: subpixelThreshold))
+      as: .image(on: .iPadPro11(.portrait)))
   }
 
   func testBookDetailViewOniPhoneDarkMode() throws {
@@ -75,6 +75,6 @@ class BookDetailViewTests: XCTestCase {
       userInterfaceStyle: UIUserInterfaceStyle.dark)
     assertSnapshot(
       matching: viewController,
-      as: .image(on: .iPhoneX, subpixelThreshold: subpixelThreshold, traits: traitDarkMode))
+      as: .image(on: .iPhoneX, traits: traitDarkMode))
   }
 }
