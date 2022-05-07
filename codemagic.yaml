@@ -5,6 +5,9 @@ definitions:
       XCODE_PROJECT: "RaysLibrary.xcodeproj"
       XCODE_iOS_SCHEME: "RaysLibrary"
   scripts:
+    - &check_architecture
+      name: Check Architecture 
+      script: ruby README.rb
     - &run_ios_tests
       name: Run iOS UI and Unit tests
       script: |
@@ -36,6 +39,7 @@ workflows:
       events:
         - push
     scripts:
+     - *check_architecture
      - name: Run iOS UI and Unit tests
        script: |
         arch -arm64 xcode-project run-tests \
