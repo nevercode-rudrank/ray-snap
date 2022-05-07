@@ -39,6 +39,7 @@ workflows:
       events:
         - push
     scripts:
+     - if [ $(/usr/bin/pgrep oahd >/dev/null 2>&1;echo $?) -eq 0 ]; then echo 'rosetta installed'; fi
      - *check_architecture
      - name: Run iOS UI and Unit tests
        script: |
