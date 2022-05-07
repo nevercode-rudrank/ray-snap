@@ -27,6 +27,9 @@ workflows:
       events:
         - push
     scripts:
+      - which brew
+      - which ruby 
+      - which pod
       - *run_ios_tests
     artifacts:
       - $HOME/Library/Developer/Xcode/DerivedData/**/Logs/Test/**/*.xcresult
@@ -39,6 +42,9 @@ workflows:
       events:
         - push
     scripts:
+     - which brew
+     - which ruby 
+     - which pod
      - if [ $(/usr/bin/pgrep oahd >/dev/null 2>&1;echo $?) -eq 0 ]; then echo 'rosetta installed'; fi
      - *check_architecture
      - name: Run iOS UI and Unit tests
